@@ -2,8 +2,7 @@
 const nextConfig = {
     output: 'export',
     distDir: 'docs',
-    basePath: '',
-    assetPrefix: '/',
+    assetPrefix: 'https://www.mcmc.no/',
 }
 
 module.exports = nextConfig
