@@ -1,7 +1,5 @@
 import React from "react"
-import Logo from "@/components/Logo"
-import { getClient } from "../client";
-import { gql } from "@apollo/client";
+import { getClient } from "../../client";
 import { postQuery } from "@/queries/post";
 import Paragraph from "@/components/Paragraph";
 import Link from "next/link";
@@ -9,7 +7,7 @@ import Link from "next/link";
 const Page = async () => {
 
     const client = getClient();
-    const id = 'clsoduf1z0002lrgo96ix5ht5';
+    const id = 'clstedlbu0000bf28oputocpl';
 
     const { data } = await client.query({
         query: postQuery,
@@ -19,10 +17,8 @@ const Page = async () => {
     const { post } = data;
 
     return (
-        <div className="mCC">
-            <Logo />
-            <div className="textWrapper">
-
+        <>
+            <div className="articleWrapper">
                 <h1>{post.title}</h1>
                 {post.content.document.map((block, i) => {
                     let out = [];
@@ -37,10 +33,15 @@ const Page = async () => {
                     });
                     return out;
                 })}
-
-                <p className="right link"><Link href="/about">Read on &raquo;</Link></p>
+                <p className="left link"><Link href="/">&laquo; Back</Link></p>
             </div>
-        </div>
+            <p className="center link app">
+                Get the badge on Google Play
+                <a href="https://play.google.com/store/apps/details?id=com.jinordnes.MCMC" target="_blank">
+                    <img src="/android-market-icon.png" alt="image" width={200} height="auto" />
+                </a>
+            </p>
+        </>
     )
 }
 export default Page
