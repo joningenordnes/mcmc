@@ -1,43 +1,14 @@
-import React from "react"
 import Logo from "@/components/Logo"
-import { getClient } from "../client";
-import { gql } from "@apollo/client";
-import { postQuery } from "@/queries/post";
-import Paragraph from "@/components/Paragraph";
 import Link from "next/link";
 
 const Page = async () => {
-
-    const client = getClient();
-    const id = 'clsoduf1z0002lrgo96ix5ht5';
-
-    const { data } = await client.query({
-        query: postQuery,
-        variables: { where: { id } },
-        fetchPolicy: 'no-cache'
-    });
-    const { post } = data;
-
     return (
         <div className="mCC">
             <Logo />
             <div className="textWrapper">
-
-                <h1>{post.title}</h1>
-                {post.content.document.map((block, i) => {
-                    let out = [];
-                    block.children.map((child, p) => {
-                        if (child.children) {
-                            child.children.map((child, q) => {
-                                out.push(<Paragraph block={child} index={p} key={`para-block-${i}-${p}-${q}`} />);
-                            });
-                        }
-                        else
-                            out.push(<Paragraph block={child} index={p} key={`para-block-${i}-${p}`} />);
-                    });
-                    return out;
-                })}
-
+                <h1>The Pledge</h1>
+                <p>With the Time Lord's emblem, our badge of pride, We embrace the journey, with nothing to hide. Through twists and turns, we face every bend, For the thrill of the ride, until the very end.</p>
+                <p>So here's to the open road, our eternal friend, In the Midlife Crisis MC, our spirits ascend. With courage and honor, we'll ride side by side, In the heart of the wind, where our dreams collide.</p>
                 <p className="right link"><Link href="/about">Read on &raquo;</Link></p>
             </div>
         </div>

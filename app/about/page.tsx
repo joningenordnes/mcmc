@@ -1,38 +1,23 @@
-import React from "react"
-import { getClient } from "../../client";
-import { postQuery } from "@/queries/post";
-import Paragraph from "@/components/Paragraph";
 import Link from "next/link";
 
 const Page = async () => {
-
-    const client = getClient();
-    const id = 'clstedlbu0000bf28oputocpl';
-
-    const { data } = await client.query({
-        query: postQuery,
-        variables: { where: { id } },
-        fetchPolicy: 'no-cache'
-    });
-    const { post } = data;
-
     return (
         <>
             <div className="articleWrapper">
-                <h1>{post.title}</h1>
-                {post.content.document.map((block, i) => {
-                    let out = [];
-                    block.children.map((child, p) => {
-                        if (child.children) {
-                            child.children.map((child, q) => {
-                                out.push(<Paragraph block={child} index={p} key={`para-block-${i}-${p}-${q}`} />);
-                            });
-                        }
-                        else
-                            out.push(<Paragraph block={child} index={p} key={`para-block-${i}-${p}`} />);
-                    });
-                    return out;
-                })}
+                <h1>MCMC</h1>
+                <p><strong>About Midlife Crisis Motorcycle Club (MCMC)</strong></p>
+                <p>Welcome to the Midlife Crisis Motorcycle Club (MCMC), where the call of the open road and the spirit of freedom unite riders from all walks of life. We're not your average motorcycle club; we're a community of vagabond motorcyclists who seek adventure and embrace the thrill of two-wheeled exploration.</p>
+                <p><strong>Our Story</strong></p>
+                <p>The Midlife Crisis Motorcycle Club (MCMC) is a fictional organization that exists in spirit, welcoming anyone who shares the desire for freedom on two wheels. Founded on the belief that the road is meant to be explored by those who seek the thrill of adventure, our club is a testament to the enduring spirit of the wanderer.</p>
+                <p><strong>Our Mission</strong></p>
+                <p>At MCMC, our mission is to celebrate the essence of the vagabond motorcyclist lifestyle. We believe in the pursuit of adventure, the camaraderie of the road, and the freedom found in the wind. Our club offers a symbolic membership through the carrying of the Time Lord emblem, a testament to our shared love for the open road.</p>
+                <p><strong>What We Stand For</strong></p>
+                <p><strong>Freedom:</strong> We believe in the freedom that comes from riding motorcycles and exploring the open road.</p>
+                <p><strong>Adventure:</strong> We thrive on the thrill of the unknown and seek out new experiences wherever the road may lead.</p>
+                <p><strong>Community:</strong> We are a diverse community of riders who share a bond forged by the love of motorcycling and the spirit of adventure.</p>
+                <p><strong>Inclusivity:</strong> Our club welcomes all who share our passion for freedom, regardless of age, background, or experience level.</p>
+                <p><strong>Join Us</strong></p>
+                <p>Are you ready to embrace the spirit of adventure with the Midlife Crisis Motorcycle Club (MCMC)? Whether you're a seasoned rider or just starting out, we invite you to join our community and become part of the journey. Carry the Time Lord emblem with pride and ride with us into the unknown.</p>
                 <p className="left link"><Link href="/">&laquo; Back</Link></p>
             </div>
             <p className="center link app">
