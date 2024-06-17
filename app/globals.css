@@ -1,7 +1,7 @@
 
 :root {
     --foreground-rgb: 0, 0, 0;
-    background: rgb(31,33,23);
+    /* background: rgb(31,33,23); */
 }
 
 * {
@@ -12,12 +12,15 @@
 
 body {
     color: rgb(var(--foreground-rgb));
-    background: rgb(31,33,23);
-    background: linear-gradient(180deg, rgba(67,71,44,1) 0%, rgba(31,33,23,1) 100%);
+    /* background: rgb(31,33,23); */
+    /* background: linear-gradient(180deg, rgba(67,71,44,1) 0%, rgba(31,33,23,1) 100%); */
+    background: rgb(31,33,23) url('/background-mobile.jpg') no-repeat center center;
+    background-size: cover;
     /* padding: 2rem 0; */
     height: 100%;
     margin: 0;
     padding: 0;
+
 }
 
 a {
@@ -54,6 +57,8 @@ svg#a {
     /* border: 1px solid red; */
     flex: 1;
     margin-top: 25px;
+    /* filter: drop-shadow(0 0 5px #00ffffff); */
+   
 }
 
 .mCC {
@@ -71,12 +76,16 @@ svg#a {
 
 
 .svg-shadow {
-    animation: svg-shadow 1.5s ease-in-out infinite alternate;
+    /* animation: svg-shadow 1.5s ease-in-out infinite alternate; */
+    /* filter: drop-shadow(1px 1px 2px rgba(188, 219, 17, 0.7)); */
+    filter: drop-shadow(0 0 5px rgb(238, 255, 139));
+
+
 }
 
-@keyframes svg-shadow {
+/* @keyframes svg-shadow {
     from {
-        filter: drop-shadow(0 0 5px #00000017) drop-shadow(0 0 15px #4b532031) drop-shadow(0 0 20px #4b532031);
+        filter: drop-shadow(0 0 5px #ffffff) drop-shadow(0 0 15px #ffffff) drop-shadow(0 0 20px #ffffff);
 
     }
 
@@ -84,12 +93,16 @@ svg#a {
 
         filter: drop-shadow(0 0 20px #00000017) drop-shadow(0 0 25px #4b532031) drop-shadow(0 0 40px #4b532031);
     }
-}
+} */
 
 h1 {
     font-family: var(--font-joaquin);
     font-size: 2.6rem;
     text-align: center;
+    /* filter: drop-shadow(1px 1px 2px rgba(188, 219, 17, 0.7)); */
+    filter: drop-shadow(0 0 5px rgb(238, 255, 139));
+
+
 }
 
 p {
@@ -97,6 +110,8 @@ p {
     font-size: 1.6rem;
     text-align: justify;
     margin: 1rem 0;
+    /* filter: drop-shadow(1px 1px 2px rgba(188, 219, 17, 0.7)); */
+    filter: drop-shadow(0 0 5px rgb(238, 255, 139));
 
     &.link {
         font-size: 1.4rem;
@@ -164,6 +179,11 @@ p {
 }
 
 @media (min-width: 769px) {
+    body {
+        background: rgb(31,33,23) url('/background.jpg') no-repeat center center fixed;
+        background-size: cover;
+
+    }
     .articleWrapper {
         max-width: 800px;
     }
