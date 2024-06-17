@@ -14,7 +14,7 @@ body {
     color: rgb(var(--foreground-rgb));
     /* background: rgb(31,33,23); */
     /* background: linear-gradient(180deg, rgba(67,71,44,1) 0%, rgba(31,33,23,1) 100%); */
-    background: rgb(31,33,23) url('/background-mobile.jpg') no-repeat center center;
+    background: rgb(31,33,23) url('/background-mobile.jpg') no-repeat center center fixed;  
     background-size: cover;
     /* padding: 2rem 0; */
     height: 100%;
