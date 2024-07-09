@@ -24,8 +24,8 @@ const ROBOTO = localFont({
 
 
 export const metadata: Metadata = {
-    title: 'Midlife Crisis Motorcycle Club | MCMC Norway',
-    description: 'Embrace the freedom of the open road with Midlife Crisis Motorcycle Club – a haven for mature new riders finding joy in riding during their midlife years. Join our community of enthusiasts, embark on unforgettable adventures, and share the thrill of rediscovering life on two wheels!',
+    title: 'Midlife Crisis Riding Club | MCRC Norway',
+    description: 'Embrace the freedom of the open road with Midlife Crisis Riding Club – a haven for mature new riders finding joy in riding during their midlife years. Join our community of enthusiasts, embark on unforgettable adventures, and share the thrill of rediscovering life on two wheels!',
 }
 
 export default function RootLayout({
