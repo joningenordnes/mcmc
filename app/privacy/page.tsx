@@ -1,36 +1,67 @@
-import "./simple.min.css"
+// import "./simple.min.css"
 
 const Page = () => {
     return (
         <div>
+            <h1>Privacy Policy for TankTally</h1>
             
-            <h1>Privacy Policy</h1>
-            <p>This privacy policy governs your use of the MCMC mobile application.</p>
+            <p><em>Last updated: 2025-04-15</em></p>
 
-            <h2>Information Collection and Use</h2>
-            <p>The MCMC does not collect any personal information or data.</p>
+            <h2>Introduction</h2>
+            <p>This privacy policy explains how TankTally ("we", "us", or "our") collects, uses, and protects your information when you use our mobile application ("App").</p>
 
-            <h2>Log Data</h2>
-            <p>No log data is collected when you use the MCMC mobile application.</p>
+            <h2>Information We Collect</h2>
 
-            <h2>Cookies</h2>
-            <p>MCMC does not use cookies.</p>
+            <h3>Analytics Data</h3>
+            <p>We use Vexo Analytics to collect anonymous usage data about how you interact with our app. This helps us improve the app experience and understand how users utilize our features. The analytics data includes:</p>
+            <ul>
+                <li>App usage patterns</li>
+                <li>Feature interaction statistics</li>
+                <li>Basic device information</li>
+                <li>App performance metrics</li>
+            </ul>
 
-            <h2>Security</h2>
-            <p>The security of your information is important to us, but remember that no method of transmission over the Internet, or method of electronic storage, is 100% secure. While we strive to use commercially acceptable means to protect your Personal Information, we cannot guarantee its absolute security.</p>
+            <h3>Local Storage</h3>
+            <p>All your tank-related data and settings are stored locally on your device. We do not collect or store this information on our servers.</p>
 
-            <h2>Links to Other Sites</h2>
-            <p>This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites. We have no control over, and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</p>
+            <h2>How We Use Your Information</h2>
+            <p>The analytics data we collect is used solely for:</p>
+            <ul>
+                <li>Improving app functionality and user experience</li>
+                <li>Identifying and fixing technical issues</li>
+                <li>Understanding which features are most valuable to users</li>
+                <li>Making data-driven decisions about future app development</li>
+            </ul>
+
+            <h2>Data Storage and Security</h2>
+            <ul>
+                <li>Your personal tank data is stored exclusively on your device</li>
+                <li>Analytics data is processed and stored securely by Vexo Analytics</li>
+                <li>We do not sell, trade, or transfer your information to third parties</li>
+            </ul>
+
+            <h2>Third-Party Services</h2>
+            <p>Our app uses the following third-party services:</p>
+            <ul>
+                <li>Vexo Analytics for app usage analytics</li>
+            </ul>
+
+            <h2>Your Rights</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li>Opt-out of analytics collection through your device settings</li>
+                <li>Delete all local app data by uninstalling the app</li>
+            </ul>
 
             <h2>Children's Privacy</h2>
-            <p>This Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to take the necessary actions.</p>
+            <p>Our app does not knowingly collect information from children under 13 years of age.</p>
 
-            <h2>Changes to This Privacy Policy</h2>
-            <p>We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted on this page.</p>
+            <h2>Changes to This Policy</h2>
+            <p>We may update this privacy policy from time to time. We will notify you of any changes by posting the new privacy policy on this page and updating the "Last updated" date.</p>
 
             <h2>Contact Us</h2>
-            <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at sendron@gmail.com.</p>
-
+            <p>If you have any questions about this privacy policy, please contact us at:<br />
+            <a href="mailto:twerrax@gmail.com">Webmaster</a></p>
         </div>
     );
 };
