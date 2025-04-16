@@ -11,6 +11,8 @@
   "dependencies": {
     "@apollo/client": "^3.9.0-rc.1",
     "@apollo/experimental-nextjs-app-support": "^0.8.0",
+    "@types/bootstrap": "^5.2.10",
+    "bootstrap": "^5.3.5",
     "graphql": "^16.8.1",
     "next": "13.5.4",
     "react": "^18",

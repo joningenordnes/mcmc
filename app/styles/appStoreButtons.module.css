@@ -1,0 +1,68 @@
+.appStoreButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .appStoreButtons {
+        flex-direction: row;
+        margin-top: 60px;
+    }
+}
+
+.appStoreButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+    width: 100%;
+    max-width: 300px;
+    height: 100px;
+}
+
+.appStoreButton:hover {
+    transform: scale(1.05);
+}
+
+.appleButton {
+    background-color: #000;
+}
+
+.googleButton {
+    background-color: #000;
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.storeIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.buttonText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.2;
+}
+
+.downloadText {
+    font-size: 0.75rem;
+}
+
+.storeName {
+    font-size: 1.25rem;
+    font-weight: 600;
+} 

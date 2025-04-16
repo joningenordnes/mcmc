@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'PantonRustHeavy';
+    src: url('/fonts/PantonRustHeavy-GrSh.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.pantonFont {
+    font-family: 'PantonRustHeavy', sans-serif;
+} 

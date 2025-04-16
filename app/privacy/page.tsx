@@ -1,4 +1,4 @@
-// import "./simple.min.css"
+import "./simple.min.css"
 
 const Page = () => {
     return (
