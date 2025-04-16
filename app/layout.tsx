@@ -36,7 +36,7 @@ export const metadata: Metadata = {
         description: 'Track your tank\'s fuel consumption with ease. Monitor your vehicle\'s performance and fuel efficiency.',
         images: [
             {
-                url: '/images/og-image.jpg',
+                url: 'https://tanktally.app/images/og-image.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'TankTally App',
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'TankTally - Track Your Vehicle\'s Fuel Consumption',
         description: 'Track your tank\'s fuel consumption with ease. Monitor your vehicle\'s performance and fuel efficiency.',
-        images: ['/images/og-image.jpg'],
+        images: ['https://tanktally.app/images/og-image.jpg'],
     },
 }
 
